@@ -152,7 +152,7 @@ void PrintStringLCDXY16x2(const uint8_t addr, char* data, uint8_t X, uint8_t Y)
 void PrintStringLCDXY20x4(const uint8_t addr, char* data, uint8_t X, uint8_t Y)
 {
 	ShiftCursorPos20x4(addr, X, Y);
-	PrintStringLCDXY20x4(addr, data, X, Y);
+	PrintStringLCD(addr, data, X, Y);
 }
 
 void ShiftCursorPos16x2(uint8_t addr, uint8_t X, uint8_t Y)
