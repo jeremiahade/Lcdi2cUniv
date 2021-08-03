@@ -299,7 +299,10 @@ void SelCursorMovement(uint8_t addr, cursrMovment_t state)
 }
 
 
-
+void ShiftDisplayCursrRight(uint8_t addr)
+{
+	WriteLCDCmdReg(addr, SHIFT_DISP_RIGHT);
+}
 
 void GoHome(uint8_t addr)
 {
